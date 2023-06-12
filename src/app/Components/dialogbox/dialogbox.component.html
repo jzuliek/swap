@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Does Something</h1>
+<div mat-dialog-content>
+  Star Wars
+  <ul>
+    <li>
+      {{ data[0].name }}
+    </li>
+    <li *ngIf="data[0].gender">
+        {{data[0].gender}}
+    </li>
+    <li *ngIf="data[0].climate">
+        {{data[0].climate}}
+    </li>
+    <li *ngIf="data[0].population">
+        {{data[0].population}}
+    </li>
+    <li *ngIf="data[0].model">
+        {{data[0].model}}
+    </li>
+    <li *ngIf="data[0].manufacturer">
+        {{data[0].manufacturer}}
+    </li>
+  </ul>
+</div>
+
+<!-- name: string;
+DOB: string;
+gender: string;
+climate: string;
+population: string;
+model: string;
+manufacturer: string;
+url: string -->

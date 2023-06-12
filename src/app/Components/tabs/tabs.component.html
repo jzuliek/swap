@@ -1,0 +1,23 @@
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  <a mat-tab-link
+  [routerLink]="['/ships']"
+  routerLinkActive
+  #starshipsRla="routerLinkActive"
+  [active]="starshipsRla.isActive"
+  >Starships</a>
+  <a
+    mat-tab-link
+    [routerLink]="['/character']"
+    routerLinkActive
+    #peopleRla="routerLinkActive"
+    [active]="peopleRla.isActive"
+    >Characters</a>
+  <a
+    mat-tab-link
+    [routerLink]="['/planets']"
+    routerLinkActive
+    #planetsRla="routerLinkActive"
+    [active]="planetsRla.isActive"
+    >Planets</a>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
